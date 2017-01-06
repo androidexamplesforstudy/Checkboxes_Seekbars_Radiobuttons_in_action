@@ -9,4 +9,97 @@
     tools:context="example.com.checkboxesseekbarsradiobuttonsinaction.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:text="@string/posilek_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek1"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:text="@string/posilek_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek2"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:text="@string/posilek_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek3"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:text="@string/posilek_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek4"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:text="@string/posilek_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek5"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:text="@string/posilek_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Posiłek6"
+                    android:textAlignment="center" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar"
+                    android:max="100" />
+
+                <TextView
+                    android:text="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:text="Tak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Nie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton2"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </RelativeLayout>
